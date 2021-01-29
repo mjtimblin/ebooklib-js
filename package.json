@@ -1,0 +1,61 @@
+{
+   "name": "ebooklib-js",
+   "version": "0.0.5",
+   "description": "A Javascript fork of EbookLib",
+   "main": "lib/index.js",
+   "type": "module",
+   "scripts": {
+      "build": "babel src -d lib",
+      "generate-docs": "jsdoc -c jsdoc.json"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+ssh://git@github.com/mjtimblin/ebooklib-js.git"
+   },
+   "author": "Michael Timblin",
+   "license": "AGPL-3.0",
+   "husky": {
+      "hooks": {
+         "pre-commit": "lint-staged"
+      }
+   },
+   "lint-staged": {
+      "./src/*.js": [
+         "npx prettier --write",
+         "eslint src/*.js --fix-dry-run"
+      ]
+   },
+   "devDependencies": {
+      "@babel/cli": "^7.12.10",
+      "@babel/core": "^7.12.10",
+      "@babel/node": "^7.12.10",
+      "@babel/preset-env": "^7.12.11",
+      "docdash": "^1.2.0",
+      "eslint": "^7.18.0",
+      "eslint-config-airbnb": "^18.2.1",
+      "eslint-config-prettier": "^7.2.0",
+      "eslint-plugin-import": "^2.22.1",
+      "eslint-plugin-jsdoc": "^31.4.0",
+      "husky": "^4.3.8",
+      "jsdoc": "^3.6.6",
+      "lint-staged": "^10.5.3",
+      "prettier": "^2.2.1"
+   },
+   "dependencies": {
+      "base64-arraybuffer": "^0.2.0",
+      "jsdom": "^16.4.0",
+      "jszip": "^3.5.0",
+      "lodash": "^4.17.20",
+      "mime-types": "^2.1.28",
+      "save-file": "^2.3.1",
+      "xml-js": "^1.6.11"
+   },
+   "bugs": {
+      "url": "https://github.com/mjtimblin/ebooklib-js/issues"
+   },
+   "homepage": "https://mjtimblin.github.io/ebooklib-js",
+   "directories": {
+      "doc": "docs",
+      "example": "examples"
+   }
+}

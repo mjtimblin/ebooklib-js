@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>Global - EbookLib-JS</title>
+    
+    <meta name="description" content="A Javascript port of EbookLib" />
+    
+        <meta name="keywords" content="ebooklib, ebooklib-js, ebooklibjs" />
+        <meta name="keyword" content="ebooklib, ebooklib-js, ebooklibjs" />
+    
+    
+    
+    <meta property="og:title" content="EbookLib-JS"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content=""/>
+    <meta property="og:site_name" content="EbookLib-JS"/>
+    <meta property="og:url" content="https://github.com/mjtimblin/ebooklib-js"/>
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <input type="text" id="nav-search" placeholder="Search" />
+    
+    <h2><a href="index.html">Home</a></h2><h2><a href="https://github.com/mjtimblin/ebooklib-js" target="_blank" class="menu-item" id="github_link" >GitHub Repository</a></h2><h3>Classes</h3><ul><li><a href="EpubBook.html">EpubBook</a><ul class='methods'><li data-type='method' style='display: none;'><a href="EpubBook.html#addAuthor">addAuthor</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#addItem">addItem</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#addMetadata">addMetadata</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#addPrefix">addPrefix</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#getItems">getItems</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#getItemsOfMediaType">getItemsOfMediaType</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#getItemsOfType">getItemsOfType</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#getItemWithHref">getItemWithHref</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#getItemWithId">getItemWithId</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#getMetadata">getMetadata</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#getTemplate">getTemplate</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#reset">reset</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#setCover">setCover</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#setIdentifier">setIdentifier</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#setLanguage">setLanguage</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#setTemplate">setTemplate</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#setTitle">setTitle</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#setUniqueMetadata">setUniqueMetadata</a></li></ul></li><li><a href="EpubCover.html">EpubCover</a><ul class='methods'><li data-type='method' style='display: none;'><a href="EpubCover.html#.getType">getType</a></li><li data-type='method' style='display: none;'><a href="EpubCover.html#getType">getType</a></li></ul></li><li><a href="EpubCoverHtml.html">EpubCoverHtml</a><ul class='methods'><li data-type='method' style='display: none;'><a href="EpubCoverHtml.html#.isChapter">isChapter</a></li><li data-type='method' style='display: none;'><a href="EpubCoverHtml.html#addItem">addItem</a></li><li data-type='method' style='display: none;'><a href="EpubCoverHtml.html#addLink">addLink</a></li><li data-type='method' style='display: none;'><a href="EpubCoverHtml.html#getBodyContent">getBodyContent</a></li><li data-type='method' style='display: none;'><a href="EpubCoverHtml.html#getContent">getContent</a></li><li data-type='method' style='display: none;'><a href="EpubCoverHtml.html#getLanguage">getLanguage</a></li><li data-type='method' style='display: none;'><a href="EpubCoverHtml.html#getLinks">getLinks</a></li><li data-type='method' style='display: none;'><a href="EpubCoverHtml.html#getLinksOfType">getLinksOfType</a></li><li data-type='method' style='display: none;'><a href="EpubCoverHtml.html#getType">getType</a></li><li data-type='method' style='display: none;'><a href="EpubCoverHtml.html#setLanguage">setLanguage</a></li></ul></li><li><a href="EpubHtml.html">EpubHtml</a><ul class='methods'><li data-type='method' style='display: none;'><a href="EpubHtml.html#.getType">getType</a></li><li data-type='method' style='display: none;'><a href="EpubHtml.html#.isChapter">isChapter</a></li><li data-type='method' style='display: none;'><a href="EpubHtml.html#addItem">addItem</a></li><li data-type='method' style='display: none;'><a href="EpubHtml.html#addLink">addLink</a></li><li data-type='method' style='display: none;'><a href="EpubHtml.html#getBodyContent">getBodyContent</a></li><li data-type='method' style='display: none;'><a href="EpubHtml.html#getContent">getContent</a></li><li data-type='method' style='display: none;'><a href="EpubHtml.html#getLanguage">getLanguage</a></li><li data-type='method' style='display: none;'><a href="EpubHtml.html#getLinks">getLinks</a></li><li data-type='method' style='display: none;'><a href="EpubHtml.html#getLinksOfType">getLinksOfType</a></li><li data-type='method' style='display: none;'><a href="EpubHtml.html#getType">getType</a></li><li data-type='method' style='display: none;'><a href="EpubHtml.html#setLanguage">setLanguage</a></li></ul></li><li><a href="EpubImage.html">EpubImage</a><ul class='methods'><li data-type='method' style='display: none;'><a href="EpubImage.html#.getType">getType</a></li><li data-type='method' style='display: none;'><a href="EpubImage.html#getType">getType</a></li></ul></li><li><a href="EpubItem.html">EpubItem</a><ul class='methods'><li data-type='method' style='display: none;'><a href="EpubItem.html#getType">getType</a></li></ul></li><li><a href="EpubNav.html">EpubNav</a><ul class='methods'><li data-type='method' style='display: none;'><a href="EpubNav.html#.isChapter">isChapter</a></li><li data-type='method' style='display: none;'><a href="EpubNav.html#addItem">addItem</a></li><li data-type='method' style='display: none;'><a href="EpubNav.html#addLink">addLink</a></li><li data-type='method' style='display: none;'><a href="EpubNav.html#getBodyContent">getBodyContent</a></li><li data-type='method' style='display: none;'><a href="EpubNav.html#getContent">getContent</a></li><li data-type='method' style='display: none;'><a href="EpubNav.html#getLanguage">getLanguage</a></li><li data-type='method' style='display: none;'><a href="EpubNav.html#getLinks">getLinks</a></li><li data-type='method' style='display: none;'><a href="EpubNav.html#getLinksOfType">getLinksOfType</a></li><li data-type='method' style='display: none;'><a href="EpubNav.html#getType">getType</a></li><li data-type='method' style='display: none;'><a href="EpubNav.html#setLanguage">setLanguage</a></li></ul></li><li><a href="EpubNcx.html">EpubNcx</a><ul class='methods'><li data-type='method' style='display: none;'><a href="EpubNcx.html#.getType">getType</a></li><li data-type='method' style='display: none;'><a href="EpubNcx.html#getType">getType</a></li></ul></li><li><a href="EpubSMIL.html">EpubSMIL</a><ul class='methods'><li data-type='method' style='display: none;'><a href="EpubSMIL.html#.getType">getType</a></li><li data-type='method' style='display: none;'><a href="EpubSMIL.html#getType">getType</a></li></ul></li><li><a href="EpubWriter.html">EpubWriter</a><ul class='methods'><li data-type='method' style='display: none;'><a href="EpubWriter.html#.createNavSection">createNavSection</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#.getHeaders">getHeaders</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#.getPagesForItem">getPagesForItem</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#.getPagesForItems">getPagesForItems</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#.writeContainer">writeContainer</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#.writeMimetype">writeMimetype</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#getNavContent">getNavContent</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#getNcxContent">getNcxContent</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#getNcxId">getNcxId</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#getOpfBindingsNode">getOpfBindingsNode</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#getOpfGuideNode">getOpfGuideNode</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#getOpfManifestNode">getOpfManifestNode</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#getOpfMetadataNode">getOpfMetadataNode</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#getOpfSpineNode">getOpfSpineNode</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#getPackageNode">getPackageNode</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#process">process</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#write">write</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#writeItems">writeItems</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#writeOpf">writeOpf</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#writeToBlob">writeToBlob</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#addChild">addChild</a></li><li><a href="global.html#convertJsObjectToXML">convertJsObjectToXML</a></li><li><a href="global.html#convertXmlStringToJS">convertXmlStringToJS</a></li><li><a href="global.html#findNodesRecursively">findNodesRecursively</a></li><li><a href="global.html#getAllNodesRecursively">getAllNodesRecursively</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">Global</h1>
+    
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>
+        
+        </h2>
+        
+    
+</header>
+
+<article>
+    
+        <div class="container-overview">
+        
+            
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+            
+
+            
+        
+        </div>
+    
+
+    
+
+    
+
+    
+    
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id="addChild"><span class="type-signature"></span>addChild<span class="signature">(parentNode, childNode)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="utils_addChild.js.html">utils/addChild.js</a>, <a href="utils_addChild.js.html#line7">line 7</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>Adds a node as a child of the parent node. This function mutates the parentNode</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>parentNode</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>JS object that may or may not include elements key</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>childNode</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>JS object to add to push to parentNode's children</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="convertJsObjectToXML"><span class="type-signature"></span>convertJsObjectToXML<span class="signature">(jsObj)</span><span class="type-signature"> &rarr; {string}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="utils_convertJsObjectToXML.js.html">utils/convertJsObjectToXML.js</a>, <a href="utils_convertJsObjectToXML.js.html#line12">line 12</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>Converts a JS object to an XML string</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>jsObj</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">xmlJs.Element</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The JS object to convert</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The XML string representation of the JS object</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">string</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="convertXmlStringToJS"><span class="type-signature"></span>convertXmlStringToJS<span class="signature">(xmlString)</span><span class="type-signature"> &rarr; {xmlJs.Element}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="utils_convertXmlStringToJS.js.html">utils/convertXmlStringToJS.js</a>, <a href="utils_convertXmlStringToJS.js.html#line12">line 12</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>Converts an XML string to a JS object</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>xmlString</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The XML string to convert</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The JS object representation of the XML string</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">xmlJs.Element</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="findNodesRecursively"><span class="type-signature"></span>findNodesRecursively<span class="signature">(nodes, discriminatorFunction)</span><span class="type-signature"> &rarr; {Array.&lt;object>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="utils_findNodesRecursively.js.html">utils/findNodesRecursively.js</a>, <a href="utils_findNodesRecursively.js.html#line11">line 11</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>Finds nodes and its child nodes recursively based on a given discriminator function</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>nodes</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;object></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>JS objects to search recursively through</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>discriminatorFunction</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Function to determine if the node should be returned in the found list</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The nodes matching the search criteria</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array.&lt;object></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getAllNodesRecursively"><span class="type-signature"></span>getAllNodesRecursively<span class="signature">(htmlDocument)</span><span class="type-signature"> &rarr; {Array.&lt;JSDOM.Node>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="utils_getAllNodesRecursively.js.html">utils/getAllNodesRecursively.js</a>, <a href="utils_getAllNodesRecursively.js.html#line10">line 10</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>Traverses the document tree to return an array of all the nodes</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>htmlDocument</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">JSDOM.Document</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The html document</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The array of nodes</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array.&lt;JSDOM.Node></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+<script src="scripts/search.js" defer></script>
+
+
+<script src="scripts/collapse.js" defer></script>
+
+
+</body>
+</html>

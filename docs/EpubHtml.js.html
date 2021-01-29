@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>EpubHtml.js - EbookLib-JS</title>
+    
+    <meta name="description" content="A Javascript port of EbookLib" />
+    
+        <meta name="keywords" content="ebooklib, ebooklib-js, ebooklibjs" />
+        <meta name="keyword" content="ebooklib, ebooklib-js, ebooklibjs" />
+    
+    
+    
+    <meta property="og:title" content="EbookLib-JS"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content=""/>
+    <meta property="og:site_name" content="EbookLib-JS"/>
+    <meta property="og:url" content="https://github.com/mjtimblin/ebooklib-js"/>
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <input type="text" id="nav-search" placeholder="Search" />
+    
+    <h2><a href="index.html">Home</a></h2><h2><a href="https://github.com/mjtimblin/ebooklib-js" target="_blank" class="menu-item" id="github_link" >GitHub Repository</a></h2><h3>Classes</h3><ul><li><a href="EpubBook.html">EpubBook</a><ul class='methods'><li data-type='method' style='display: none;'><a href="EpubBook.html#addAuthor">addAuthor</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#addItem">addItem</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#addMetadata">addMetadata</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#addPrefix">addPrefix</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#getItems">getItems</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#getItemsOfMediaType">getItemsOfMediaType</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#getItemsOfType">getItemsOfType</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#getItemWithHref">getItemWithHref</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#getItemWithId">getItemWithId</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#getMetadata">getMetadata</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#getTemplate">getTemplate</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#reset">reset</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#setCover">setCover</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#setIdentifier">setIdentifier</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#setLanguage">setLanguage</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#setTemplate">setTemplate</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#setTitle">setTitle</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#setUniqueMetadata">setUniqueMetadata</a></li></ul></li><li><a href="EpubCover.html">EpubCover</a><ul class='methods'><li data-type='method' style='display: none;'><a href="EpubCover.html#.getType">getType</a></li><li data-type='method' style='display: none;'><a href="EpubCover.html#getType">getType</a></li></ul></li><li><a href="EpubCoverHtml.html">EpubCoverHtml</a><ul class='methods'><li data-type='method' style='display: none;'><a href="EpubCoverHtml.html#.isChapter">isChapter</a></li><li data-type='method' style='display: none;'><a href="EpubCoverHtml.html#addItem">addItem</a></li><li data-type='method' style='display: none;'><a href="EpubCoverHtml.html#addLink">addLink</a></li><li data-type='method' style='display: none;'><a href="EpubCoverHtml.html#getBodyContent">getBodyContent</a></li><li data-type='method' style='display: none;'><a href="EpubCoverHtml.html#getContent">getContent</a></li><li data-type='method' style='display: none;'><a href="EpubCoverHtml.html#getLanguage">getLanguage</a></li><li data-type='method' style='display: none;'><a href="EpubCoverHtml.html#getLinks">getLinks</a></li><li data-type='method' style='display: none;'><a href="EpubCoverHtml.html#getLinksOfType">getLinksOfType</a></li><li data-type='method' style='display: none;'><a href="EpubCoverHtml.html#getType">getType</a></li><li data-type='method' style='display: none;'><a href="EpubCoverHtml.html#setLanguage">setLanguage</a></li></ul></li><li><a href="EpubHtml.html">EpubHtml</a><ul class='methods'><li data-type='method' style='display: none;'><a href="EpubHtml.html#.getType">getType</a></li><li data-type='method' style='display: none;'><a href="EpubHtml.html#.isChapter">isChapter</a></li><li data-type='method' style='display: none;'><a href="EpubHtml.html#addItem">addItem</a></li><li data-type='method' style='display: none;'><a href="EpubHtml.html#addLink">addLink</a></li><li data-type='method' style='display: none;'><a href="EpubHtml.html#getBodyContent">getBodyContent</a></li><li data-type='method' style='display: none;'><a href="EpubHtml.html#getContent">getContent</a></li><li data-type='method' style='display: none;'><a href="EpubHtml.html#getLanguage">getLanguage</a></li><li data-type='method' style='display: none;'><a href="EpubHtml.html#getLinks">getLinks</a></li><li data-type='method' style='display: none;'><a href="EpubHtml.html#getLinksOfType">getLinksOfType</a></li><li data-type='method' style='display: none;'><a href="EpubHtml.html#getType">getType</a></li><li data-type='method' style='display: none;'><a href="EpubHtml.html#setLanguage">setLanguage</a></li></ul></li><li><a href="EpubImage.html">EpubImage</a><ul class='methods'><li data-type='method' style='display: none;'><a href="EpubImage.html#.getType">getType</a></li><li data-type='method' style='display: none;'><a href="EpubImage.html#getType">getType</a></li></ul></li><li><a href="EpubItem.html">EpubItem</a><ul class='methods'><li data-type='method' style='display: none;'><a href="EpubItem.html#getType">getType</a></li></ul></li><li><a href="EpubNav.html">EpubNav</a><ul class='methods'><li data-type='method' style='display: none;'><a href="EpubNav.html#.isChapter">isChapter</a></li><li data-type='method' style='display: none;'><a href="EpubNav.html#addItem">addItem</a></li><li data-type='method' style='display: none;'><a href="EpubNav.html#addLink">addLink</a></li><li data-type='method' style='display: none;'><a href="EpubNav.html#getBodyContent">getBodyContent</a></li><li data-type='method' style='display: none;'><a href="EpubNav.html#getContent">getContent</a></li><li data-type='method' style='display: none;'><a href="EpubNav.html#getLanguage">getLanguage</a></li><li data-type='method' style='display: none;'><a href="EpubNav.html#getLinks">getLinks</a></li><li data-type='method' style='display: none;'><a href="EpubNav.html#getLinksOfType">getLinksOfType</a></li><li data-type='method' style='display: none;'><a href="EpubNav.html#getType">getType</a></li><li data-type='method' style='display: none;'><a href="EpubNav.html#setLanguage">setLanguage</a></li></ul></li><li><a href="EpubNcx.html">EpubNcx</a><ul class='methods'><li data-type='method' style='display: none;'><a href="EpubNcx.html#.getType">getType</a></li><li data-type='method' style='display: none;'><a href="EpubNcx.html#getType">getType</a></li></ul></li><li><a href="EpubSMIL.html">EpubSMIL</a><ul class='methods'><li data-type='method' style='display: none;'><a href="EpubSMIL.html#.getType">getType</a></li><li data-type='method' style='display: none;'><a href="EpubSMIL.html#getType">getType</a></li></ul></li><li><a href="EpubWriter.html">EpubWriter</a><ul class='methods'><li data-type='method' style='display: none;'><a href="EpubWriter.html#.createNavSection">createNavSection</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#.getHeaders">getHeaders</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#.getPagesForItem">getPagesForItem</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#.getPagesForItems">getPagesForItems</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#.writeContainer">writeContainer</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#.writeMimetype">writeMimetype</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#getNavContent">getNavContent</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#getNcxContent">getNcxContent</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#getNcxId">getNcxId</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#getOpfBindingsNode">getOpfBindingsNode</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#getOpfGuideNode">getOpfGuideNode</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#getOpfManifestNode">getOpfManifestNode</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#getOpfMetadataNode">getOpfMetadataNode</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#getOpfSpineNode">getOpfSpineNode</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#getPackageNode">getPackageNode</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#process">process</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#write">write</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#writeItems">writeItems</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#writeOpf">writeOpf</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#writeToBlob">writeToBlob</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#addChild">addChild</a></li><li><a href="global.html#convertJsObjectToXML">convertJsObjectToXML</a></li><li><a href="global.html#convertXmlStringToJS">convertXmlStringToJS</a></li><li><a href="global.html#findNodesRecursively">findNodesRecursively</a></li><li><a href="global.html#getAllNodesRecursively">getAllNodesRecursively</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">EpubHtml.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import { set } from 'lodash';
+import EpubItem from './EpubItem';
+import ItemTypeEnum from './enum/ItemTypeEnum';
+import convertXmlStringToJS from './utils/convertXmlStringToJS';
+import convertJsObjectToXML from './utils/convertJsObjectToXML';
+import addChild from './utils/addChild';
+import TemplateTypeEnum from './enum/TemplateTypeEnum';
+import findNodesRecursively from './utils/findNodesRecursively';
+
+/**
+ * Class that represents an HTML document in the EPUB file.
+ *
+ * @class
+ * @augments EpubItem
+ */
+class EpubHtml extends EpubItem {
+	constructor(
+		uid = null,
+		fileName = '',
+		mediaType = '',
+		content = null,
+		title = '',
+		lang = null,
+		direction = null,
+		mediaOverlay = null,
+		mediaDuration = null,
+	) {
+		super(uid, fileName, mediaType, content);
+
+		this.title = title;
+		this.lang = lang;
+		this.direction = direction;
+
+		this.mediaOverlay = mediaOverlay;
+		this.mediaDuration = mediaDuration;
+
+		this.links = [];
+		this.properties = [];
+		this.pages = [];
+	}
+
+	/**
+	 * Returns true if this document is a chapter and false if it is not
+	 *
+	 * @returns {boolean} The book value
+	 */
+	static isChapter() {
+		return true;
+	}
+
+	/**
+	 * Overrides EpubItem's getType method to always return DOCUMENT type
+	 *
+	 * @returns {ItemTypeEnum} The item's type
+	 */
+	static getType() {
+		return ItemTypeEnum.DOCUMENT;
+	}
+
+	/**
+	 * Sets the language for this book item. By default it will user the language of the book, but
+	 * it can still be overwritten with this method.
+	 *
+	 * @param {string} lang  The new language code for this book item
+	 */
+	setLanguage(lang) {
+		this.lang = lang;
+	}
+
+	/**
+	 * Gets the language code for this book item. The language of the book item can be different from the
+	 * language settings defined globally for the book.
+	 *
+	 * @returns {string}  The language code for this book item
+	 */
+	getLanguage() {
+		return this.lang;
+	}
+
+	/**
+	 * Adds an additional link to the document. Links will be embedded only inside of this document.
+	 * NOTE: This link has an undefined structure and is not the same as the Link object in src/epub/Link.js
+	 *
+	 * @example &lt;caption>Example usage of addLink.&lt;/caption>
+	 * addLink({href='styles.css', rel='stylesheet', type='text/css'})
+	 *
+	 * @param {object} link The link to add to the document
+	 */
+	addLink(link) {
+		this.links.push(link);
+
+		if (
+			Object.keys(link).includes('type') &amp;&amp;
+			link.type === 'text/javascript' &amp;&amp;
+			!this.properties.includes('scripted')
+		) {
+			this.properties.push('scripted');
+		}
+	}
+
+	/**
+	 * Returns the array of additional links defined for this document.
+	 * NOTE: These links have an undefined structure and is not the same as the Link object in src/epub/Link.js
+	 *
+	 * @returns {Array.&lt;object>} An array of links
+	 *
+	 */
+	getLinks() {
+		return this.links;
+	}
+
+	/**
+	 * Returns an array of additional links defined for this document of the given type.
+	 * NOTE: These links have an undefined structure and is not the same as the Link object in src/epub/Link.js
+	 *
+	 * @param {string} linkType  The type of the links to search for (e.g. 'text/javascript')
+	 *
+	 * @returns {Array.&lt;object>} An array of links
+	 *
+	 */
+	getLinksOfType(linkType) {
+		return this.links.filter(
+			(link) => Object.keys(link).includes('type') &amp;&amp; link.type === linkType,
+		);
+	}
+
+	/**
+	 * Adds an EpubItem to this document. It will create additional links according to the item type.
+	 *
+	 * @param {EpubItem} item  The EpubItem to add to this document
+	 */
+	addItem(item) {
+		switch (item.getType()) {
+			case ItemTypeEnum.STYLE:
+				this.addLink({
+					href: item.getName(),
+					rel: 'stylesheet',
+					type: 'text/css',
+				});
+				break;
+			case ItemTypeEnum.SCRIPT:
+				this.addLink({
+					src: item.getName(),
+					type: 'text/javascript',
+				});
+				break;
+			default:
+		}
+	}
+
+	/**
+	 * Gets the content of the Body element for this HTML document. Content will be of type string
+	 *
+	 * @returns {string}  The body content of this document
+	 */
+	getBodyContent() {
+		try {
+			const wrappedContent =
+				this.content &amp;&amp; this.content.includes('body')
+					? this.content
+					: `&lt;div>${this.content || ''}&lt;/div>`;
+
+			const content = convertXmlStringToJS(wrappedContent);
+			const bodyNodes = findNodesRecursively(
+				[content],
+				(node) => node.name === 'body',
+			);
+
+			return bodyNodes.length > 0 ? bodyNodes[0] : content;
+		} catch (error) {
+			return '';
+		}
+	}
+
+	/**
+	 * Gets the content for this HTML document as a string.
+	 *
+	 * @returns {string} The content
+	 */
+	getContent() {
+		try {
+			const tree = convertXmlStringToJS(
+				this.book.getTemplate(TemplateTypeEnum.CHAPTER),
+			);
+
+			const treeRoot = tree.elements[tree.elements.length - 1];
+			set(treeRoot.attributes, 'lang', this.lang || this.book.language);
+			set(treeRoot.attributes, 'xml:lang', this.lang || this.book.language);
+
+			const headElement = {
+				type: 'element',
+				name: 'head',
+				attributes: {},
+				elements: [],
+			};
+
+			if (this.title !== '') {
+				const titleElement = {
+					type: 'element',
+					name: 'title',
+					attributes: {},
+					elements: [
+						{
+							type: 'text',
+							text: this.title,
+						},
+					],
+				};
+				addChild(headElement, titleElement);
+			}
+
+			Object.values(this.links).forEach((link) => {
+				switch (link.type) {
+					case 'text/javascript': {
+						const scriptElement = {
+							type: 'element',
+							name: 'script',
+							attributes: {},
+							elements: [],
+						};
+						set(scriptElement.attributes, 'src', link.src);
+						addChild(headElement, scriptElement);
+						break;
+					}
+					case 'text/css': {
+						const styleElement = {
+							type: 'element',
+							name: 'link',
+							attributes: {},
+							elements: [],
+						};
+						set(styleElement.attributes, 'rel', link.rel);
+						set(styleElement.attributes, 'href', link.href);
+						addChild(headElement, styleElement);
+						break;
+					}
+					default:
+				}
+			});
+
+			addChild(treeRoot, headElement);
+			const bodyElement = {
+				type: 'element',
+				name: 'body',
+				attributes: {},
+				elements: [],
+			};
+
+			if (this.direction) {
+				set(bodyElement.attributes, 'dir', this.direction);
+				set(treeRoot.attributes, 'dir', this.direction);
+			}
+
+			const bodyContent = this.getBodyContent();
+
+			if (bodyContent) {
+				bodyContent.elements.forEach((node) => addChild(bodyElement, node));
+			}
+
+			addChild(treeRoot, bodyElement);
+			tree.elements[tree.elements.length - 1] = treeRoot;
+
+			return convertJsObjectToXML(tree);
+		} catch (error) {
+			return '';
+		}
+	}
+}
+
+EpubHtml.prototype.toString = () => `&lt;EpubHtml:${this.id}:${this.fileName}>`;
+
+export default EpubHtml;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+<script src="scripts/search.js" defer></script>
+
+
+<script src="scripts/collapse.js" defer></script>
+
+
+</body>
+</html>

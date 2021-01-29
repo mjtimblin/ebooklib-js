@@ -1,0 +1,28 @@
+{
+	"editor.detectIndentation": false,
+	"editor.tabSize": 3,
+	"prettier.tabWidth": 3,
+	"prettier.useTabs": true,
+	"cSpell.words": [
+      "NAMESPACES",
+      "NISO",
+      "bodymatter",
+      "dcterms",
+      "elementtree",
+      "epub",
+      "etree",
+      "idref",
+      "item",
+      "itemref",
+      "nsmap",
+      "oebps",
+      "opendocument",
+      "pagelist",
+      "pageref",
+      "relators",
+      "rootfile",
+      "rootfiles",
+      "smil",
+      "uuidv"
+   ]
+}

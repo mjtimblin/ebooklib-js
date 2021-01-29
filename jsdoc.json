@@ -1,0 +1,67 @@
+{
+   "tags": {
+      "allowUnknownTags": false
+   },
+   "source": {
+      "include": [
+         "src/",
+         "./README.md"
+      ],
+      "includePattern": "\\.js$"
+   },
+   "plugins": [
+      "plugins/markdown"
+   ],
+   "opts": {
+      "template": "node_modules/docdash",
+      "encoding": "utf8",
+      "destination": "docs/",
+      "recurse": true,
+      "verbose": true
+   },
+   "markdown": {
+      "parser": "gfm",
+      "hardwrap": true,
+      "idInHeadings": true
+   },
+   "templates": {
+      "cleverLinks": false,
+      "monospaceLinks": false,
+      "default": {
+         "outputSourceFiles": true,
+         "includeDate": false,
+         "useLongnameInNav": true
+      }
+   },
+   "docdash": {
+      "static": true,
+      "sort": true,
+      "openGraph": {
+         "title": "EbookLib-JS",
+         "type": "website",
+         "image": "",
+         "site_name": "EbookLib-JS",
+         "url": "https://github.com/mjtimblin/ebooklib-js"
+      },
+      "meta": {
+         "title": "EbookLib-JS",
+         "description": "A Javascript port of EbookLib",
+         "keyword": "ebooklib, ebooklib-js, ebooklibjs"
+      },
+      "search": true,
+      "collapse": true,
+      "typedefs": true,
+      "removeQuotes": "none",
+      "wrap": false,
+      "scripts": [],
+      "menu": {
+         "GitHub Repository": {
+            "href": "https://github.com/mjtimblin/ebooklib-js",
+            "target": "_blank",
+            "class": "menu-item",
+            "id": "github_link"
+         }
+      },
+      "versionInOutputPath": true
+   }
+}

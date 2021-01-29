@@ -1,0 +1,2857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>EpubWriter - EbookLib-JS</title>
+    
+    <meta name="description" content="A Javascript port of EbookLib" />
+    
+        <meta name="keywords" content="ebooklib, ebooklib-js, ebooklibjs" />
+        <meta name="keyword" content="ebooklib, ebooklib-js, ebooklibjs" />
+    
+    
+    
+    <meta property="og:title" content="EbookLib-JS"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content=""/>
+    <meta property="og:site_name" content="EbookLib-JS"/>
+    <meta property="og:url" content="https://github.com/mjtimblin/ebooklib-js"/>
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <input type="text" id="nav-search" placeholder="Search" />
+    
+    <h2><a href="index.html">Home</a></h2><h2><a href="https://github.com/mjtimblin/ebooklib-js" target="_blank" class="menu-item" id="github_link" >GitHub Repository</a></h2><h3>Classes</h3><ul><li><a href="EpubBook.html">EpubBook</a><ul class='methods'><li data-type='method' style='display: none;'><a href="EpubBook.html#addAuthor">addAuthor</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#addItem">addItem</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#addMetadata">addMetadata</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#addPrefix">addPrefix</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#getItems">getItems</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#getItemsOfMediaType">getItemsOfMediaType</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#getItemsOfType">getItemsOfType</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#getItemWithHref">getItemWithHref</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#getItemWithId">getItemWithId</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#getMetadata">getMetadata</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#getTemplate">getTemplate</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#reset">reset</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#setCover">setCover</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#setIdentifier">setIdentifier</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#setLanguage">setLanguage</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#setTemplate">setTemplate</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#setTitle">setTitle</a></li><li data-type='method' style='display: none;'><a href="EpubBook.html#setUniqueMetadata">setUniqueMetadata</a></li></ul></li><li><a href="EpubCover.html">EpubCover</a><ul class='methods'><li data-type='method' style='display: none;'><a href="EpubCover.html#.getType">getType</a></li><li data-type='method' style='display: none;'><a href="EpubCover.html#getType">getType</a></li></ul></li><li><a href="EpubCoverHtml.html">EpubCoverHtml</a><ul class='methods'><li data-type='method' style='display: none;'><a href="EpubCoverHtml.html#.isChapter">isChapter</a></li><li data-type='method' style='display: none;'><a href="EpubCoverHtml.html#addItem">addItem</a></li><li data-type='method' style='display: none;'><a href="EpubCoverHtml.html#addLink">addLink</a></li><li data-type='method' style='display: none;'><a href="EpubCoverHtml.html#getBodyContent">getBodyContent</a></li><li data-type='method' style='display: none;'><a href="EpubCoverHtml.html#getContent">getContent</a></li><li data-type='method' style='display: none;'><a href="EpubCoverHtml.html#getLanguage">getLanguage</a></li><li data-type='method' style='display: none;'><a href="EpubCoverHtml.html#getLinks">getLinks</a></li><li data-type='method' style='display: none;'><a href="EpubCoverHtml.html#getLinksOfType">getLinksOfType</a></li><li data-type='method' style='display: none;'><a href="EpubCoverHtml.html#getType">getType</a></li><li data-type='method' style='display: none;'><a href="EpubCoverHtml.html#setLanguage">setLanguage</a></li></ul></li><li><a href="EpubHtml.html">EpubHtml</a><ul class='methods'><li data-type='method' style='display: none;'><a href="EpubHtml.html#.getType">getType</a></li><li data-type='method' style='display: none;'><a href="EpubHtml.html#.isChapter">isChapter</a></li><li data-type='method' style='display: none;'><a href="EpubHtml.html#addItem">addItem</a></li><li data-type='method' style='display: none;'><a href="EpubHtml.html#addLink">addLink</a></li><li data-type='method' style='display: none;'><a href="EpubHtml.html#getBodyContent">getBodyContent</a></li><li data-type='method' style='display: none;'><a href="EpubHtml.html#getContent">getContent</a></li><li data-type='method' style='display: none;'><a href="EpubHtml.html#getLanguage">getLanguage</a></li><li data-type='method' style='display: none;'><a href="EpubHtml.html#getLinks">getLinks</a></li><li data-type='method' style='display: none;'><a href="EpubHtml.html#getLinksOfType">getLinksOfType</a></li><li data-type='method' style='display: none;'><a href="EpubHtml.html#getType">getType</a></li><li data-type='method' style='display: none;'><a href="EpubHtml.html#setLanguage">setLanguage</a></li></ul></li><li><a href="EpubImage.html">EpubImage</a><ul class='methods'><li data-type='method' style='display: none;'><a href="EpubImage.html#.getType">getType</a></li><li data-type='method' style='display: none;'><a href="EpubImage.html#getType">getType</a></li></ul></li><li><a href="EpubItem.html">EpubItem</a><ul class='methods'><li data-type='method' style='display: none;'><a href="EpubItem.html#getType">getType</a></li></ul></li><li><a href="EpubNav.html">EpubNav</a><ul class='methods'><li data-type='method' style='display: none;'><a href="EpubNav.html#.isChapter">isChapter</a></li><li data-type='method' style='display: none;'><a href="EpubNav.html#addItem">addItem</a></li><li data-type='method' style='display: none;'><a href="EpubNav.html#addLink">addLink</a></li><li data-type='method' style='display: none;'><a href="EpubNav.html#getBodyContent">getBodyContent</a></li><li data-type='method' style='display: none;'><a href="EpubNav.html#getContent">getContent</a></li><li data-type='method' style='display: none;'><a href="EpubNav.html#getLanguage">getLanguage</a></li><li data-type='method' style='display: none;'><a href="EpubNav.html#getLinks">getLinks</a></li><li data-type='method' style='display: none;'><a href="EpubNav.html#getLinksOfType">getLinksOfType</a></li><li data-type='method' style='display: none;'><a href="EpubNav.html#getType">getType</a></li><li data-type='method' style='display: none;'><a href="EpubNav.html#setLanguage">setLanguage</a></li></ul></li><li><a href="EpubNcx.html">EpubNcx</a><ul class='methods'><li data-type='method' style='display: none;'><a href="EpubNcx.html#.getType">getType</a></li><li data-type='method' style='display: none;'><a href="EpubNcx.html#getType">getType</a></li></ul></li><li><a href="EpubSMIL.html">EpubSMIL</a><ul class='methods'><li data-type='method' style='display: none;'><a href="EpubSMIL.html#.getType">getType</a></li><li data-type='method' style='display: none;'><a href="EpubSMIL.html#getType">getType</a></li></ul></li><li><a href="EpubWriter.html">EpubWriter</a><ul class='methods'><li data-type='method' style='display: none;'><a href="EpubWriter.html#.createNavSection">createNavSection</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#.getHeaders">getHeaders</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#.getPagesForItem">getPagesForItem</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#.getPagesForItems">getPagesForItems</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#.writeContainer">writeContainer</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#.writeMimetype">writeMimetype</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#getNavContent">getNavContent</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#getNcxContent">getNcxContent</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#getNcxId">getNcxId</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#getOpfBindingsNode">getOpfBindingsNode</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#getOpfGuideNode">getOpfGuideNode</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#getOpfManifestNode">getOpfManifestNode</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#getOpfMetadataNode">getOpfMetadataNode</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#getOpfSpineNode">getOpfSpineNode</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#getPackageNode">getPackageNode</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#process">process</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#write">write</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#writeItems">writeItems</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#writeOpf">writeOpf</a></li><li data-type='method' style='display: none;'><a href="EpubWriter.html#writeToBlob">writeToBlob</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#addChild">addChild</a></li><li><a href="global.html#convertJsObjectToXML">convertJsObjectToXML</a></li><li><a href="global.html#convertXmlStringToJS">convertXmlStringToJS</a></li><li><a href="global.html#findNodesRecursively">findNodesRecursively</a></li><li><a href="global.html#getAllNodesRecursively">getAllNodesRecursively</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">EpubWriter</h1>
+    
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>
+        EpubWriter
+        </h2>
+        
+            <div class="class-description usertext"><p>Class for writing an EpubBook to a file</p></div>
+        
+    
+</header>
+
+<article>
+    
+        <div class="container-overview">
+        
+            
+
+    
+    <h2>Constructor</h2>
+    
+
+    <h4 class="name" id="EpubWriter"><span class="type-signature"></span>new EpubWriter<span class="signature">(fileName, book, options<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="EpubWriter.js.html">EpubWriter.js</a>, <a href="EpubWriter.js.html#line37">line 37</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>fileName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>The filename of the .epub file</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>book</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="EpubBook.html">EpubBook</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>The EpubBook object</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+|
+
+<span class="param-type">null</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    <code>{}</code>
+                
+                </td>
+            
+
+            <td class="description last"><p>An object with option overrides</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        </div>
+    
+
+    
+
+    
+
+    
+    
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id=".createNavSection"><span class="type-signature">(static) </span>createNavSection<span class="signature">(parentNode, items, navDirName)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="EpubWriter.js.html">EpubWriter.js</a>, <a href="EpubWriter.js.html#line573">line 573</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>Adds a nav section to the given parentNode</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>parentNode</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Node</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The parent node where the item nodes will be placed in</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>items</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;<a href="EpubItem.html">EpubItem</a>></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The EpubItems to render in the section</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>navDirName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The directory that holds the nav file</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".getHeaders"><span class="type-signature">(static) </span>getHeaders<span class="signature">(node)</span><span class="type-signature"> &rarr; {string|null}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="EpubWriter.js.html">EpubWriter.js</a>, <a href="EpubWriter.js.html#line485">line 485</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>TODO: Add description</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>node</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The JS representation of an XML node</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>TODO: Add description</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">string</span>
+|
+
+<span class="param-type">null</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".getPagesForItem"><span class="type-signature">(static) </span>getPagesForItem<span class="signature">(item)</span><span class="type-signature"> &rarr; {Array.&lt;object>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="EpubWriter.js.html">EpubWriter.js</a>, <a href="EpubWriter.js.html#line508">line 508</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>Converts EpubHtml item into HTML pages</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>item</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="EpubHtml.html">EpubHtml</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The item to get pages for</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>TODO: Add description</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array.&lt;object></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".getPagesForItems"><span class="type-signature">(static) </span>getPagesForItems<span class="signature">(items)</span><span class="type-signature"> &rarr; {Array.&lt;object>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="EpubWriter.js.html">EpubWriter.js</a>, <a href="EpubWriter.js.html#line552">line 552</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>Converts EpubHtml items into HTML pages</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>items</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="EpubHtml.html">EpubHtml</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The items to get pages for</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>TODO: Add description</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array.&lt;object></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".writeContainer"><span class="type-signature">(static) </span>writeContainer<span class="signature">(zip)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="EpubWriter.js.html">EpubWriter.js</a>, <a href="EpubWriter.js.html#line124">line 124</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>Writes the container XML file to the given zip file</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>zip</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">JSZip</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The zip file to write the container XML file to</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".writeMimetype"><span class="type-signature">(static) </span>writeMimetype<span class="signature">(zip)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="EpubWriter.js.html">EpubWriter.js</a>, <a href="EpubWriter.js.html#line114">line 114</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>Writes the mimetype file to the given zip file</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>zip</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">JSZip</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The zip file to write the container XML file to</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getNavContent"><span class="type-signature"></span>getNavContent<span class="signature">(item)</span><span class="type-signature"> &rarr; {string}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="EpubWriter.js.html">EpubWriter.js</a>, <a href="EpubWriter.js.html#line686">line 686</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>Gets the nav page content for the given EpubNav item</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>item</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="EpubNav.html">EpubNav</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The EpubNav item to generate the nav page content for</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The content of the nav page</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">string</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getNcxContent"><span class="type-signature"></span>getNcxContent<span class="signature">()</span><span class="type-signature"> &rarr; {string}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="EpubWriter.js.html">EpubWriter.js</a>, <a href="EpubWriter.js.html#line1123">line 1123</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>Gets the NCX content</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The NCX content for the EPUB file.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">string</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getNcxId"><span class="type-signature"></span>getNcxId<span class="signature">()</span><span class="type-signature"> &rarr; {string}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="EpubWriter.js.html">EpubWriter.js</a>, <a href="EpubWriter.js.html#line101">line 101</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>Gets the id of the NCX item</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The NCX id</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">string</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getOpfBindingsNode"><span class="type-signature"></span>getOpfBindingsNode<span class="signature">()</span><span class="type-signature"> &rarr; {Node|null}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="EpubWriter.js.html">EpubWriter.js</a>, <a href="EpubWriter.js.html#line407">line 407</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>Builds and returns the bindings node for including in the OPF file</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The bindings node or null if there are no bindings</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Node</span>
+|
+
+<span class="param-type">null</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getOpfGuideNode"><span class="type-signature"></span>getOpfGuideNode<span class="signature">()</span><span class="type-signature"> &rarr; {Node|null}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="EpubWriter.js.html">EpubWriter.js</a>, <a href="EpubWriter.js.html#line368">line 368</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>Builds and returns the guide node for including in the OPF file<br>
+See http://www.idpf.org/epub/20/spec/OPF_2.0.1_draft.htm#Section2.6 for the specification</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The guide node or null if there is no guide</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Node</span>
+|
+
+<span class="param-type">null</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getOpfManifestNode"><span class="type-signature"></span>getOpfManifestNode<span class="signature">()</span><span class="type-signature"> &rarr; {Node}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="EpubWriter.js.html">EpubWriter.js</a>, <a href="EpubWriter.js.html#line262">line 262</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>Builds and returns the manifest node for including in the OPF file</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The manifest node</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Node</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getOpfMetadataNode"><span class="type-signature"></span>getOpfMetadataNode<span class="signature">()</span><span class="type-signature"> &rarr; {Node}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="EpubWriter.js.html">EpubWriter.js</a>, <a href="EpubWriter.js.html#line164">line 164</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>Builds and returns the metadata node for including in the OPF file</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The metadata node</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Node</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getOpfSpineNode"><span class="type-signature"></span>getOpfSpineNode<span class="signature">()</span><span class="type-signature"> &rarr; {Node}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="EpubWriter.js.html">EpubWriter.js</a>, <a href="EpubWriter.js.html#line325">line 325</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>Builds and returns the spine node for including in the OPF file</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The spine node</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Node</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getPackageNode"><span class="type-signature"></span>getPackageNode<span class="signature">()</span><span class="type-signature"> &rarr; {xmlJs.Element}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="EpubWriter.js.html">EpubWriter.js</a>, <a href="EpubWriter.js.html#line134">line 134</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>Builds and returns the package node for including in the OPF file</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The metadata node</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">xmlJs.Element</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="process"><span class="type-signature"></span>process<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="EpubWriter.js.html">EpubWriter.js</a>, <a href="EpubWriter.js.html#line73">line 73</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>Runs the the &quot;beforeWrite&quot; and &quot;htmlBeforeWrite&quot; callbacks in the configured<br>
+plugins on the book and each item in the book</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="write"><span class="type-signature"></span>write<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="EpubWriter.js.html">EpubWriter.js</a>, <a href="EpubWriter.js.html#line1254">line 1254</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>Writes EPUB to a zip file</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="writeItems"><span class="type-signature"></span>writeItems<span class="signature">(zip)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="EpubWriter.js.html">EpubWriter.js</a>, <a href="EpubWriter.js.html#line1215">line 1215</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>Writes the EPUB items to the given zip file</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>zip</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">JSZip</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The zip file to write the item files to</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="writeOpf"><span class="type-signature"></span>writeOpf<span class="signature">(zip)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="EpubWriter.js.html">EpubWriter.js</a>, <a href="EpubWriter.js.html#line437">line 437</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>Writes the OPF file to the given zip file</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>zip</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">JSZip</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The zip file to write the OPF file to</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="writeToBlob"><span class="type-signature">(async) </span>writeToBlob<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="EpubWriter.js.html">EpubWriter.js</a>, <a href="EpubWriter.js.html#line1270">line 1270</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>Writes EPUB to a Blob</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+<script src="scripts/search.js" defer></script>
+
+
+<script src="scripts/collapse.js" defer></script>
+
+
+</body>
+</html>
