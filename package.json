@@ -1,6 +1,6 @@
 {
    "name": "ebooklib-js",
-   "version": "0.0.5",
+   "version": "0.0.6",
    "description": "A Javascript fork of EbookLib",
    "main": "lib/index.js",
    "type": "module",
